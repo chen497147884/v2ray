@@ -1,0 +1,24 @@
+{
+  "log": {
+	"loglevel": "warning",
+    "access": "C:\\Program Files\\V2Ray\\access.log",
+    "error": "C:\\Program Files\\V2Ray\\error.log"
+  },
+   "inbound": {
+	"port": 1234, 
+    "protocol": "vmess",    
+    "settings": {
+      "clients": [
+        {
+          "id": "293c95b0-a4a2-47d5-b6eb-da8e6894e7b8",  //UUID 在这个网站随机生成一个，https://www.uuidgenerator.net， 要保证client和server配置一个UUID
+          "alterId": 55,  // 这个自定，数字范围0-100，但要保证客户端和服务端一致
+          "level": 1  // 官方说明，0 共享VPS, 1 自用VPS
+        }
+      ]
+    }
+  },
+  "outbound": {
+    "protocol": "freedom",  
+    "settings": {}
+  }
+}
